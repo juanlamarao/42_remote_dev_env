@@ -11,17 +11,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-# Altere estas informacoes
-## id na intra da 42
-ID_42="id_na_intra"
-## email no github
-GITHUB_EMAIL="email@email.com"
-## nome de usuario no github
-GITHUB_USERNAME="username"
-
-# don't change this part
-#----------------------------------------------------------#
-sed -i s/\$USER/$ID_42/ ~/.vim/after/plugin/42header.vim
-sed -i s/\$USER/$ID_42/ ~/.emacs.d/header.el
-sed -i s/\$GITHUB_EMAIL/$GITHUB_EMAIL/ git_config.sh
-sed -i s/\$GITHUB_USERNAME/$GITHIB_USERNAME/ git_config.sh
+sed -i s/\$USER/$42_INTRA_ID/ ~/.vim/after/plugin/42header.vim
+sed -i s/\$USER/$42_INTRA_ID/ ~/.emacs.d/header.el
+sed -i s/\$GITHUB_EMAIL/$GIT_USER_EMAIL/ git_config.sh
+sed -i s/\$GITHUB_USERNAME/GIT_USER_NAME/ git_config.sh
