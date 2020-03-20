@@ -6,7 +6,7 @@
 "    By: pbondoer <pbondoer@student.42.fr>          +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2015/12/06 19:39:01 by pbondoer          #+#    #+#              "
-"    Updated: 2020/03/19 23:06:07 by juanlamar        ###   ########.fr        "
+"    Updated: 2020/03/20 15:44:01 by juolivei         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -92,7 +92,7 @@ function! s:line(n)
 endfunction
 
 function! s:user()
-	let l:user = $42_INTRA_ID
+	let l:user = $INTRA_ID
 	if exists('g:hdr42user')
 		let l:user = g:hdr42user
 	endif
