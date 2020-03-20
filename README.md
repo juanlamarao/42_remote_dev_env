@@ -10,8 +10,8 @@ This project aims to support people programming in C with an ambient containing:
 * Compilers: gcc, clang and _make;
 * Debugger: lldb and valgrind;
 * Version control: git;  
-There is a folder called docker_files located at `/docker_files` which is mounted at the host machine.
-> Change the docker run command to suit your configuration
+* There is a folder called docker_files located at `/docker_files` which is mounted at the host machine.
+>  Change the docker run command to suit your configuration.
 
 > add an image showing a circle of how it works  
 > build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
