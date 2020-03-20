@@ -5,7 +5,13 @@
 A docker image ready to code in C :D
 
 ## How it works
-something something...
+This project aims to support people programming in C with an ambient containing:
+* Text editors: vim, emacs and nano;
+* Compilers: gcc, clang and _make;
+* Debugger: lldb and valgrind;
+* Version control: git;
+There is a folder called docker_files located at `/docker_files` which is mounted at the host machine.
+> Change the docker run command to suit your configuration
 
 > add an image showing a circle of how it works  
 > build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
@@ -49,10 +55,11 @@ You can fork to make your own, but would be better if you fork it and
 submmit your changes as pull requests, and help it grow :D
 
 ### Check this _To do_
-* check permision of the docker volume at the host
-* change the working directory to /docker_files at the 1st `run`
-* improve terminal bash
-* add pt-br language
-* add suport for graphical projects
-* add norminette suport
-* test libft-unit_test (not working yet, something is missing)
+* check permision of the docker volume at the host;
+* change the working directory to /docker_files at the 1st `run`;
+* improve terminal bash;
+* add pt-br language;
+* add support for graphical projects;
+* add norminette support;
+* test libft-unit_test (not working yet, something is missing);
+* install emacs and 42 header for emacs;
