@@ -33,3 +33,4 @@ A docker image ready to code in C :D
 ## To do
 * check permision of the docker volume at the host
 * improve terminal bash
+* add pt-br language
