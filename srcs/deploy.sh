@@ -34,7 +34,8 @@ cp -rf 42header_emacs ~/.emacs.d
 
 # credentials configuration for vim header, emacs header and git commits
 bash credentials.sh
-bash git_config.sh
+git config --global user.email "$GIT_USER_EMAIL"
+git config --global user.name "$GIT_USER_NAME"
 
 # copy scripts and turn  executable
 cp su-exec /sbin/su-exec
