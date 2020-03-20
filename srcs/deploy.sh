@@ -18,7 +18,7 @@ mv /root/sources.list /etc/apt/sources.list
 apt-get update
 
 # installing dependency
-apt-get install -y --no-install-recommends apt-utils=1.8.2
+apt-get install -y --no-install-recommends apt-utils=1.8.2 2> /dev/null
 apt-get install -y man manpages-dev glibc-doc
 apt-get install -y nano git build-essential clang lldb libbsd-dev valgrind
 apt-get install -y vim
