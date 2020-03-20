@@ -14,8 +14,8 @@
 # altere o campo "id_na_intra" pelo seu próprio id
 sed -i s/\$USER/id_na_intra/ 42header.vim
 
-# altere o campo seu_email_githubl@email.com para o seu e-mail utilizado no github
-sed -i s/\$EMAIL/seu_email_github@email.com/ git_config.sh
+# altere o campo seu_email@email.com para o seu e-mail utilizado no github
+sed -i s/\$GITHUB_EMAIL/seu_email@email.com/ git_config.sh
 
-# altere o campo github_username para o seu usuario utilizado no github
-sed -i s/\$GITHUB_USERNAME/github_username/ git_config.sh
+# altere o campo seu_username para o seu usuario utilizado no github
+sed -i s/\$GITHUB_USERNAME/seu_username/ git_config.sh

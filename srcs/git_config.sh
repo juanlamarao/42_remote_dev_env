@@ -11,5 +11,5 @@
 #                                                                              #
 # **************************************************************************** #
 
-git config --global user.email "email@email.com"
-git config --global user.name "usuario"
+git config --global user.email "$GITHUB_EMAIL"
+git config --global user.name "$GITHUB_USERNAME"
