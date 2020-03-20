@@ -4,7 +4,7 @@ A docker image ready to code in C :D
 ## How it works
 something something...
 
-> add a image showing a circle of how it works  
+> add an image showing a circle of how it works  
 > build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
 
 ## How to build the image
