@@ -1,2 +1,2 @@
-*.vim linguist-vendored
-*.sh linguist-vendored
+srcs/*.vim linguist-vendored
+srcs/*.sh linguist-vendored
