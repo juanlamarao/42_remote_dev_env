@@ -1,6 +1,12 @@
 # 42_remote_dev_ambient
 A docker image ready to code in C :D
 
+## How it works
+something something...
+
+> add a image showing a circle of how it works  
+> build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
+
 ## How to build the image
 1. `git clone https://github.com/juanlamarao/42_remote_dev_ambient`
 2. Enter the `42_remote_dev_ambient` folder
