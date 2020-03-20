@@ -14,7 +14,7 @@
 cd $HOME
 
 # updating repository
-mv /root/sources.list /etc/apt/sources.list
+mv ~/sources.list /etc/apt/sources.list
 apt-get update
 
 # installing dependency
