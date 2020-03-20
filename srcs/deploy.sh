@@ -13,16 +13,21 @@
 
 cd $HOME
 
-# updating repository
+# update repository
 mv ~/sources.list /etc/apt/sources.list
 apt-get update
 
-# installing dependency
+# install dependency
 apt-get install -y --no-install-recommends apt-utils=1.8.2 2> /dev/null
 apt-get install -y --no-install-recommends man manpages-dev glibc-doc
-apt-get install -y --no-install-recommends nano git build-essential clang lldb libbsd-dev valgrind
+apt-get install -y --no-install-recommends nano git build-essential clang libbsd-dev
+
+#install debbugers
+apt-get install -y --no-install-recommends lldb valgrind
+
+# install text editors
 apt-get install -y --no-install-recommends vim
-apt-get install -y --no-install-recommends emacs
+#apt-get install -y --no-install-recommends emacs
 
 # vim configuration
 cp vimrc /etc/vim/
@@ -32,14 +37,9 @@ cp ~/42header.vim ~/.vim/after/plugin/
 # emacs configuration
 cp -rf 42header_emacs ~/.emacs.d
 
-# credentials configuration for git commits
-#git config --global user.email "$GIT_USER_EMAIL"
-#git config --global user.name "$GIT_USER_NAME"
-
 # copy scripts and turn them executable
 cp su-exec /sbin/su-exec
 cp entrypoint.sh /bin/entrypoint.sh
-#chmod +x /sbin/su-exec /bin/entrypoint.sh
 
 # remove unecessary files
 rm -rf deploy.sh vimrc 42header.vim 42header_emacs su-exec entrypoint.sh

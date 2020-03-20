@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:buster-slim
 LABEL maintainer="Juan 'juolivei' Lamarao <juolivei@student.42sp.org.br>"
 RUN useradd -ms /bin/bash me
 ENV HOME /home/me
