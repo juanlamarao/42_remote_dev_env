@@ -13,7 +13,7 @@
 
 # Altere estas informacoes
 ## id na intra da 42
-ID_42 = "id_na_intra"
+ID_42="id_na_intra"
 ## email no github
 GITHUB_EMAIL="email@email.com"
 ## nome de usuario no github
