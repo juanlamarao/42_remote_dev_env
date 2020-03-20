@@ -34,9 +34,15 @@ something something...
 
 ## Removing all images
 ### Linux || MacOS
-`as`
+`docker rmi remote_42 debian:buster`
 
-## To do
+## It time to help!
+Fell free to help improve this ambient of developlement to help others.  
+You can fork to make your own, but would be better if you fork it and
+submmit your changes by pull request, and help it grow :D
+
+### Check this _To do_
 * check permision of the docker volume at the host
 * improve terminal bash
 * add pt-br language
+* add suport for graphical projects
