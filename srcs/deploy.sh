@@ -13,21 +13,28 @@
 
 cd /root/
 
-#updating repository
+# updating repository
 mv /root/sources.list /etc/apt/sources.list
 apt-get update
 
-#installing dependency
+# installing dependency
 apt-get install -y --no-install-recommends apt-utils=1.8.2
 apt-get install -y man manpages-dev glibc-doc
-apt-get install -y vim git build-essential clang lldb libbsd-dev valgrind
+apt-get install -y nano git build-essential clang lldb libbsd-dev valgrind
+apt-get install -y vim
+#apt-get install -y emacs
 
-#42 header using vim && git credentials
-mv vimrc /etc/vim/
+# vim configuration
+cp vimrc /etc/vim/
 mkdir -p ~/.vim/after/plugin/
+cp /root/42header.vim ~/.vim/after/plugin/
+
+# emacs configuration
+cp -rf 42header_emacs ~/.emacs.d
+
+# credentials configuration for vim, emacs and git commits
 bash /root/credentials.sh
-mv /root/42header.vim ~/.vim/after/plugin/
 bash git_config.sh
 
-#remove unecessary files
-rm -rf deploy.sh credentials.sh
+# remove unecessary files
+rm -rf deploy.sh credentials.sh vimrc 42header.vim 42header_emacs
