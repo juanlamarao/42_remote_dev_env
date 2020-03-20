@@ -22,7 +22,7 @@ apt-get install -y --no-install-recommends apt-utils=1.8.2
 apt-get install -y man manpages-dev glibc-doc
 apt-get install -y nano git build-essential clang lldb libbsd-dev valgrind
 apt-get install -y vim
-#apt-get install -y emacs
+apt-get install -y emacs
 
 # vim configuration
 cp vimrc /etc/vim/
