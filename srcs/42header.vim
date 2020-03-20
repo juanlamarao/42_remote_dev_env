@@ -92,7 +92,7 @@ function! s:line(n)
 endfunction
 
 function! s:user()
-	let l:user = "$USER"
+	let l:user = $42_INTRA_ID
 	if exists('g:hdr42user')
 		let l:user = g:hdr42user
 	endif
