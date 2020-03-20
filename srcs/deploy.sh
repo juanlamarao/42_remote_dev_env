@@ -39,7 +39,7 @@ cp -rf 42header_emacs ~/.emacs.d
 # copy scripts and turn them executable
 cp su-exec /sbin/su-exec
 cp entrypoint.sh /bin/entrypoint.sh
-chmod +x /sbin/su-exec /bin/entrypoint.sh
+#chmod +x /sbin/su-exec /bin/entrypoint.sh
 
 # remove unecessary files
 rm -rf deploy.sh vimrc 42header.vim 42header_emacs su-exec entrypoint.sh
