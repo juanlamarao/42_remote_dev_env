@@ -13,41 +13,35 @@ This project aims to support people programming in C with an environment contain
 * There is a folder called docker_files located at `/docker_files` which is mounted at the host machine.
 >  Change the docker run command to suit your configuration.
 
-> add an image showing a circle of how it works  
+> TO DO add an image showing a circle of how it works  
 > build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
 
 ## How to build the image
 1. `git clone https://github.com/juanlamarao/42_remote_dev_env`
 2. Enter the `42_remote_dev_env` folder
-3. Change `srcs/credentials.sh` with your credentials
-4. `docker build . -t remote_42`
+3. `docker build . -t remote_42_img`
 
 ## How to run the container
+First change the run_container.sh file with your informations
 ### Linux || MacOS
-`docker run -it --name="remote_42" -v ~/docker_files:/docker_files remote_42`
+`bash run_container.sh`
 ### Windows
 `on progess..`
 
 ## How to execute a command at a running container
-`docker exec remote_42 command`
+`docker exec remote_42_ctn command`
 
 ## How to stop a running container
 * Option 1: from the host's terminal
-`docker stop`
+`docker stop remote_42_ctn`
 * Option 2: from the container's terminal
 `exit`
 
-## Removing all containers
-### Linux || MacOS
-`docker rm $(docker ps -a | grep remote_42 | cut -d ' ' -f 1)`
-### Windows
-`on progress..`
-
 ## Removing images
 ### Linux || MacOS
-`docker rmi remote_42 debian:buster`
+`docker rmi remote_42_img debian:buster`
 ### Windows
-`docker rmi remote_42 debian:buster`
+`on progress..`
 
 ## It time to help!
 Fell free to help improve this environment to help others.  
@@ -55,11 +49,10 @@ You can fork to make your own, but would be better if you fork it and
 submmit your changes as pull requests, and help it grow :D
 
 ### Check this _To do_
-* check permision of the docker volume at the host;
-* change the working directory to /docker_files at the 1st `run`;
+* check permision of the docker volume at the host (Linux OK, Mac OK, Windows FAIL);
 * improve terminal bash;
 * add pt-br language;
 * add support for graphical projects;
 * add norminette support;
 * test libft-unit_test (not working yet, something is missing);
-* install emacs and 42 header for emacs;
+* check 42 header for emacs;
