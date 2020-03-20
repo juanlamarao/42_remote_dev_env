@@ -43,6 +43,7 @@ submmit your changes as pull requests, and help it grow :D
 
 ### Check this _To do_
 * check permision of the docker volume at the host
+* change the working directory to /docker_files at the 1st `run`
 * improve terminal bash
 * add pt-br language
 * add suport for graphical projects
