@@ -1,4 +1,7 @@
 # 42_remote_dev_ambient
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c0045ab9e584b76b4cfdd8d69fcc041)](https://app.codacy.com/manual/juanlamarao/42_remote_dev_ambient?utm_source=github.com&utm_medium=referral&utm_content=juanlamarao/42_remote_dev_ambient&utm_campaign=Badge_Grade_Dashboard)
+
 A docker image ready to code in C :D
 
 ## How it works
