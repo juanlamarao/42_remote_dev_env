@@ -46,3 +46,4 @@ submmit your changes as pull requests, and help it grow :D
 * improve terminal bash
 * add pt-br language
 * add suport for graphical projects
+* add norminette suport
