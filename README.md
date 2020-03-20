@@ -17,7 +17,7 @@ something something...
 ### Linux || MacOS
 `docker run -it --name="remote_42" -v ~/docker_files:/docker_files remote_42`
 ### Windows
-`docker run -it --name="remote_42" -v \Users\something:/docker_files remote_42`
+`on progess..`
 
 ## How to execute a command at a running container
 `docker exec remote_42 command`
@@ -31,9 +31,13 @@ something something...
 ## Removing all containers
 ### Linux || MacOS
 `docker rm $(docker ps -a | grep remote_42 | cut -d ' ' -f 1)`
+### Windows
+`on progress..`
 
 ## Removing images
 ### Linux || MacOS
+`docker rmi remote_42 debian:buster`
+### Windows
 `docker rmi remote_42 debian:buster`
 
 ## It time to help!
