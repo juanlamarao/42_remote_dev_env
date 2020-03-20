@@ -3,8 +3,9 @@ A docker image ready to code in C :D
 
 ## How to build the image
 1. `git clone https://github.com/juanlamarao/42_remote_dev_ambient`
-2. `cd 42_remote_dev_ambient`
-3. `docker build . -t remote_42`
+2. Enter the `42_remote_dev_ambient` folder
+3. Change `srcs/credentials.sh` with your credentials
+4. `docker build . -t remote_42`
 
 ## How to run the container
 ### Linux || MacOS
@@ -14,6 +15,20 @@ A docker image ready to code in C :D
 
 ## How to execute a command at a running container
 `docker exec remote_42 command`
+
+## How to stop a running container
+* Option 1: from the host's terminal
+`docker stop`
+* Option 2: from the container's terminal
+`exit`
+
+## Removing all containers
+### Linux || MacOS
+`docker rm $(docker ps -a | grep remote_42 | cut -d ' ' -f 1)`
+
+## Removing all images
+### Linux || MacOS
+`as`
 
 ## To do
 * check permision of the docker volume at the host
