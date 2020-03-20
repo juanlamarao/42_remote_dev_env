@@ -27,20 +27,19 @@ apt-get install -y emacs
 # vim configuration
 cp vimrc /etc/vim/
 mkdir -p ~/.vim/after/plugin/
-cp /root/42header.vim ~/.vim/after/plugin/
+cp ~/42header.vim ~/.vim/after/plugin/
 
 # emacs configuration
 cp -rf 42header_emacs ~/.emacs.d
 
-# credentials configuration for vim header, emacs header and git commits
-bash credentials.sh
+# credentials configuration for git commits
 git config --global user.email "$GIT_USER_EMAIL"
 git config --global user.name "$GIT_USER_NAME"
 
-# copy scripts and turn  executable
+# copy scripts and turn them executable
 cp su-exec /sbin/su-exec
 cp entrypoint.sh /bin/entrypoint.sh
 chmod +x /sbin/su-exec /bin/entrypoint.sh
 
 # remove unecessary files
-rm -rf deploy.sh credentials.sh vimrc 42header.vim 42header_emacs su-exec entrypoint.sh
+rm -rf deploy.sh vimrc 42header.vim 42header_emacs su-exec entrypoint.sh
