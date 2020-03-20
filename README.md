@@ -9,7 +9,7 @@ This project aims to support people programming in C with an ambient containing:
 * Text editors: vim, emacs and nano;
 * Compilers: gcc, clang and _make;
 * Debugger: lldb and valgrind;
-* Version control: git;
+* Version control: git;  
 There is a folder called docker_files located at `/docker_files` which is mounted at the host machine.
 > Change the docker run command to suit your configuration
 
