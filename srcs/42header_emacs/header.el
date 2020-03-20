@@ -32,7 +32,7 @@
 (setq write-file-hooks (cons 'header-update write-file-hooks))
 
 
-(set 'user-login "$USER")
+(set 'user-login $42_INTRA_ID)
 
 
 
