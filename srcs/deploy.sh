@@ -11,7 +11,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-cd /root/
+cd $HOME
 
 # updating repository
 mv /root/sources.list /etc/apt/sources.list
@@ -32,9 +32,14 @@ cp /root/42header.vim ~/.vim/after/plugin/
 # emacs configuration
 cp -rf 42header_emacs ~/.emacs.d
 
-# credentials configuration for vim, emacs and git commits
-bash /root/credentials.sh
+# credentials configuration for vim header, emacs header and git commits
+bash credentials.sh
 bash git_config.sh
 
+# copy scripts and turn  executable
+cp su-exec /sbin/su-exec
+cp entrypoint.sh /bin/entrypoint.sh
+chmod +x /sbin/su-exec /bin/entrypoint.sh
+
 # remove unecessary files
-rm -rf deploy.sh credentials.sh vimrc 42header.vim 42header_emacs
+rm -rf deploy.sh credentials.sh vimrc 42header.vim 42header_emacs su-exec entrypoint.sh
