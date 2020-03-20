@@ -1,11 +1,11 @@
-# 42_remote_dev_ambient
+# 42_remote_dev_env
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c0045ab9e584b76b4cfdd8d69fcc041)](https://app.codacy.com/manual/juanlamarao/42_remote_dev_ambient?utm_source=github.com&utm_medium=referral&utm_content=juanlamarao/42_remote_dev_ambient&utm_campaign=Badge_Grade_Dashboard)
 
-A docker image ready to code in C :D
+A docker image with an environment ready to code in C :D
 
 ## How it works
-This project aims to support people programming in C with an ambient containing:
+This project aims to support people programming in C with an environment containing:
 * Text editors: vim, emacs and nano;
 * Compilers: gcc, clang and _make;
 * Debugger: lldb and valgrind;
@@ -17,8 +17,8 @@ This project aims to support people programming in C with an ambient containing:
 > build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
 
 ## How to build the image
-1. `git clone https://github.com/juanlamarao/42_remote_dev_ambient`
-2. Enter the `42_remote_dev_ambient` folder
+1. `git clone https://github.com/juanlamarao/42_remote_dev_env`
+2. Enter the `42_remote_dev_env` folder
 3. Change `srcs/credentials.sh` with your credentials
 4. `docker build . -t remote_42`
 
@@ -50,7 +50,7 @@ This project aims to support people programming in C with an ambient containing:
 `docker rmi remote_42 debian:buster`
 
 ## It time to help!
-Fell free to help improve this ambient to help others.  
+Fell free to help improve this environment to help others.  
 You can fork to make your own, but would be better if you fork it and
 submmit your changes as pull requests, and help it grow :D
 
