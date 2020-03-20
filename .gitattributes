@@ -1,0 +1,2 @@
+*.vim linguist-vendored
+*.sh linguist-vendored
