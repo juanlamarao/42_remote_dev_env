@@ -1,5 +1,8 @@
 #!/usr/bun/env bash
 
+# to build a image use this command 
+#docker build . -t remote_42_img
+
 # change "42_intra_id", "My Name" and "me@email.com" as may suit you
 LOCAL_INTRA_ID="42_intra_id"
 LOCAL_GIT_NAME="My Name"
@@ -14,4 +17,4 @@ docker run -it --rm \
 	-e INTRA_ID="$(echo $LOCAL_INTRA_ID)" \
 	-e GIT_USER_NAME="$(echo $LOCAL_GIT_NAME)" \
 	-e GIT_USER_EMAIL="$(echo $LOCAL_GIT_EMAIL)" \
-    remote_42
+    remote_42_img
