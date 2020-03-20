@@ -32,7 +32,7 @@ something something...
 ### Linux || MacOS
 `docker rm $(docker ps -a | grep remote_42 | cut -d ' ' -f 1)`
 
-## Removing all images
+## Removing images
 ### Linux || MacOS
 `docker rmi remote_42 debian:buster`
 
