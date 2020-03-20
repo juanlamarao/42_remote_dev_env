@@ -1,4 +1,2 @@
-*.vim linguist-vendored
-*.sh linguist-vendored
-*.el linguist-vendored
-*vim linguist-vendored
+*
+Dockefile linguist-vendored=false
