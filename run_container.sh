@@ -15,7 +15,7 @@ docker run -it --rm \
 	-v ~/docker_files:/docker_files \
 	-e HOST_USER_ID=$(id -u $USER) \
 	-e HOST_GROUP_ID=$(id -g $USER) \
-	-e INTRA_ID="$(echo $LOCAL_INTRA_ID)" \
-	-e GIT_USER_NAME="$(echo $LOCAL_GIT_NAME)" \
-	-e GIT_USER_EMAIL="$(echo $LOCAL_GIT_EMAIL)" \
+	-e INTRA_ID="$(echo "$LOCAL_INTRA_ID")" \
+	-e GIT_USER_NAME="$(echo "$LOCAL_GIT_NAME")" \
+	-e GIT_USER_EMAIL="$(echo "$LOCAL_GIT_EMAIL")" \
     remote_42_img
