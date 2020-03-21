@@ -20,9 +20,9 @@ This project aims to support people programming in C with an environment contain
 
 ## How to build the image
 
-1.	`git clone https://github.com/juanlamarao/42_remote_dev_env`
-2.	Enter the `42_remote_dev_env` folder
-3.	`docker build . -t remote_42_img`
+1.  `git clone https://github.com/juanlamarao/42_remote_dev_env`
+2. Enter the `42_remote_dev_env` folder
+  3.`docker build . -t remote_42_img`
 
 ## How to run the container
 
