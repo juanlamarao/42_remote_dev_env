@@ -13,7 +13,7 @@
 
 # packages to install
 L_PKG_MAN="man manpages-dev glibc-doc"
-L_PKG_DEPN="nano git build-essential clang libbsd-dev locales"
+L_PKG_DEPN="nano git build-essential clang libbsd-dev"
 L_PKG_DEBG="lldb valgrind"
 L_PKG_VIM="vim"
 #L_PKG_EMACS="emacs"
@@ -46,8 +46,6 @@ fi
 if $(hash emacs 2> /dev/null); then
 	cp -rf 42header_emacs ~/.emacs.d
 fi
-# language configuration
-cp -f ~/locale.gen /etc/locale.gen
 
 # copy scripts
 cp -f bashrc ~/.bashrc
