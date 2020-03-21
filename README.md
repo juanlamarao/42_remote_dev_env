@@ -1,6 +1,6 @@
 # 42_remote_dev_env
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c0045ab9e584b76b4cfdd8d69fcc041)](https://app.codacy.com/manual/juanlamarao/42_remote_dev_ambient?utm_source=github.com&utm_medium=referral&utm_content=juanlamarao/42_remote_dev_ambient&utm_campaign=Badge_Grade_Dashboard) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 A docker image with an environment ready to code in C :D
 
@@ -42,10 +42,10 @@ First change the `run_container.sh` file with your informations
 
 ## How to stop a running container
 
-- Option 1: from the host's terminal  
+-   Option 1: from the host's terminal  
 `docker stop remote_42_ctn`
 
-- Option 2: from the container's terminal  
+-   Option 2: from the container's terminal  
 `exit`
 
 ## Removing images
@@ -66,8 +66,4 @@ submmit your changes as pull requests, and help it grow :D
 -   add support for graphical projects;
 -   add norminette support;
 -   test libft-unit\_test (not working yet, something is missing?);
--  test 42 header for emacs;
-
-## License
-
-[MIT](LICENSE) © Juan Lamarão
+-   test 42 header for emacs;
