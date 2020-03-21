@@ -23,7 +23,7 @@ This project aims to support people programming in C with an environment contain
 3. `docker build . -t remote_42_img`
 
 ## How to run the container
-First change the run_container.sh file with your informations
+First change the `run_container.sh` file with your informations
 ### Linux || MacOS
 `bash run_container.sh`
 ### Windows
