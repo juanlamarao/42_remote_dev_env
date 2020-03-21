@@ -37,10 +37,10 @@ First change the `run_container.sh` file with your informations
 `docker exec remote_42_ctn command`
 
 ## How to stop a running container
-* Option 1: from the host's terminal
+* Option 1: from the host's terminal  
 `docker stop remote_42_ctn`
 
-* Option 2: from the container's terminal
+* Option 2: from the container's terminal  
 `exit`
 
 ## Removing images
@@ -59,3 +59,7 @@ submmit your changes as pull requests, and help it grow :D
 * add norminette support;
 * test libft-unit_test (not working yet, something is missing?);
 * test 42 header for emacs;
+
+## License
+
+[MIT](LICENSE) © Juan Lamarão
