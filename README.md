@@ -7,20 +7,20 @@ A docker image with an environment ready to code in C :D
 ## How it works
 
 This project aims to support people programming in C with an environment containing:
-* Text editors: vim, \*emacs and nano;
+*	Text editors: vim, \*emacs and nano;
 
-* Compilers: gcc, clang and _make;
+*	Compilers: gcc, clang and \_make;
 
-* Debugger: lldb and valgrind;
+*	Debugger: lldb and valgrind;
 
-* Version control: git;
+*	Version control: git;
 
-* There is a folder called docker_files located at `/docker_files` which is mounted at the host machine.
+*	There is a folder called docker\_files located at `/docker_files` which is mounted at the host machine.
 
- \* _if you use emacs (don't know why :D) change the `srcs/deploy.sh` and uncomment the `L_PKG_EMACS="emacs"` line (line 25)_
+\* if you use emacs (don't know why :D) change the `srcs/deploy.sh` and uncomment the `L_PKG_EMACS="emacs"` line (line 25)_  
 
-> `comment` TO DO add an image showing a circle of how it works  
-> `comment` build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
+>	`comment` TO DO add an image showing a circle of how it works  
+>	`comment` build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
 
 ## How to build the image
 
@@ -69,7 +69,7 @@ submmit your changes as pull requests, and help it grow :D
 *	add pt-br language (acentos);
 *	add support for graphical projects;
 *	add norminette support;
-*	test libft-unit_test (not working yet, something is missing?);
+*	test libft-unit\_test (not working yet, something is missing?);
 *	test 42 header for emacs;
 
 ## License
