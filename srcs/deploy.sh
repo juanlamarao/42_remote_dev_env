@@ -11,12 +11,6 @@
 #                                                                              #
 # **************************************************************************** #
 
-cd $HOME
-
-# update repository
-mv ~/sources.list /etc/apt/sources.list
-apt-get update
-
 # packages to install
 L_PKG_MAN="man manpages-dev glibc-doc"
 L_PKG_DEPN="nano git build-essential clang libbsd-dev"
@@ -27,8 +21,13 @@ L_PKG_VIM="vim"
 # add yours packages to install here
 L_PKG_OTHERS=""
 
-# ---------------------------------------------------------- #
-# don't change this part
+# ------------ don't change this part ------------- #
+# change to home directory
+cd
+
+# update repository
+mv ~/sources.list /etc/apt/sources.list
+apt-get update
 
 # install packages
 apt-get install -y --no-install-recommends apt-utils=1.8.2 2> /dev/null
