@@ -12,7 +12,7 @@ This project aims to support people programming in C with an environment contain
 * Version control: git;  
 * There is a folder called docker_files located at `/docker_files` which is mounted at the host machine.
 
-\* if you use emacs (don't know why :D) change the `srcs/deploy.sh` and uncomment the `LOCAL_EMACS="emacs"` line (line 25)
+  \* if you use emacs (don't know why :D) change the `srcs/deploy.sh` and uncomment the `LOCAL_EMACS="emacs"` line (line 25)
 
 > `comment` TO DO add an image showing a circle of how it works  
 > `comment` build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
