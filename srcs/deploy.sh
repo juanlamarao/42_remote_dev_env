@@ -47,9 +47,10 @@ if $(hash emacs 2> /dev/null); then
 	cp -rf 42header_emacs ~/.emacs.d
 fi
 
-# copy scripts and turn them executable
-cp su-exec /sbin/su-exec
-cp entrypoint.sh /bin/entrypoint.sh
+# copy scripts
+cp -f bashrc ~/.bashrc
+cp -f su-exec /sbin/su-exec
+cp -f entrypoint.sh /bin/entrypoint.sh
 
 # remove unecessary files
-rm -rf deploy.sh vimrc 42header.vim 42header_emacs su-exec entrypoint.sh
+rm -rf deploy.sh vimrc 42header.vim 42header_emacs su-exec entrypoint.sh bashrc
