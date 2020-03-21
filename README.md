@@ -7,11 +7,11 @@ A docker image with an environment ready to code in C :D
 ## How it works
 
 This project aims to support people programming in C with an environment containing:
-- Text editors: vim, \*emacs and nano;
-- Compilers: gcc, clang and make;
-- Debugger: lldb and valgrind;
-- Version control: git;
-- There is a folder called docker\_files located at `/docker_files` which is mounted at the host machine.
+-   Text editors: vim, \*emacs and nano;
+-   Compilers: gcc, clang and make;
+-   Debugger: lldb and valgrind;
+-   Version control: git;
+-   There is a folder called docker\_files located at `/docker_files` which is mounted at the host machine.
 
 \* if you use emacs (don't know why :D) change the `srcs/deploy.sh` and uncomment the `L_PKG_EMACS="emacs"` line (line 25)_  
 
@@ -21,8 +21,8 @@ This project aims to support people programming in C with an environment contain
 ## How to build the image
 
 1.  `git clone https://github.com/juanlamarao/42_remote_dev_env`
-2. Enter the `42_remote_dev_env` folder
-  3.`docker build . -t remote_42_img`
+2.  Enter the `42_remote_dev_env` folder
+3.  `docker build . -t remote_42_img`
 
 ## How to run the container
 
@@ -60,13 +60,13 @@ submmit your changes as pull requests, and help it grow :D
 
 ### Check this _To do_
 
-- check permision of the docker volume at the host; (Linux OK, Mac OK, Windows FAIL)
-- improve terminal bash; (more collors and cool funcs :D) OK
-- add pt-br language (acentos);
-- add support for graphical projects;
-- add norminette support;
-- test libft-unit\_test (not working yet, something is missing?);
-- test 42 header for emacs;
+-   check permision of the docker volume at the host; (Linux OK, Mac OK, Windows FAIL)
+-   improve terminal bash; (more collors and cool funcs :D) OK
+-   add pt-br language (acentos);
+-   add support for graphical projects;
+-   add norminette support;
+-   test libft-unit\_test (not working yet, something is missing?);
+-  test 42 header for emacs;
 
 ## License
 
