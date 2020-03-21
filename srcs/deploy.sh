@@ -40,15 +40,15 @@ apt-get install -y --no-install-recommends $LOCAL_MAN $LOCAL_DEPN $LOCAL_DEBG $L
 #apt-get install -y --no-install-recommends emacs
 
 # vim configuration
-if [ $(hash vim) ]; then
-  cp vimrc /etc/vim/
-  mkdir -p ~/.vim/after/plugin/
-  cp ~/42header.vim ~/.vim/after/plugin/
+if $(hash vim 2> /dev/null); then
+cp vimrc /etc/vim/
+mkdir -p ~/.vim/after/plugin/
+cp ~/42header.vim ~/.vim/after/plugin/
 fi
 
 # emacs configuration
-if [ $(hash emacs) ]; then
-  cp -rf 42header_emacs ~/.emacs.d
+if $(hash emacs 2> /dev/null); then
+cp -rf 42header_emacs ~/.emacs.d
 fi
 
 # copy scripts and turn them executable
