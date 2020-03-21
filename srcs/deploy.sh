@@ -32,8 +32,8 @@ L_PKG_OTHERS=""
 
 # install packages
 apt-get install -y --no-install-recommends apt-utils=1.8.2 2> /dev/null
-apt-get install -y --no-install-recommends $L_PKG_MAN $L_PKG_DEPN $L_PKG_DEBG \
-	$L_PKG_VIM $L_PKG_EMACS $L_PKG_OTHERS
+apt-get install -y --no-install-recommends "$L_PKG_MAN" "$L_PKG_DEPN" "$L_PKG_DEBG" \
+	"$L_PKG_VIM" "$L_PKG_EMACS" "$L_PKG_OTHERS"
 
 # vim configuration
 if $(hash vim 2> /dev/null); then
