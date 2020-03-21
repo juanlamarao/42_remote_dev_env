@@ -11,7 +11,7 @@ LOCAL_GIT_EMAIL="me@mail.com"
 # ------------------------------------------------------------------- #
 # don't change this part
 docker run -it --rm \
-	-v ~/docker_files:/workdir \
+	-v ~/docker_files:/docker_files \
 	-e HOST_USER_ID=$(id -u $USER) \
 	-e HOST_GROUP_ID=$(id -g $USER) \
 	-e INTRA_ID="$(echo $LOCAL_INTRA_ID)" \
