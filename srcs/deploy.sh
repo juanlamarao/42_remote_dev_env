@@ -18,26 +18,22 @@ mv ~/sources.list /etc/apt/sources.list
 apt-get update
 
 # packages to install
-LOCAL_MAN="man manpages-dev glibc-doc"
-LOCAL_DEPN="nano git build-essential clang libbsd-dev"
-LOCAL_DEBG="lldb valgrind"
-LOCAL_VIM="vim"
-#LOCAL_EMACS="emacs"
+L_PKG_MAN="man manpages-dev glibc-doc"
+L_PKG_DEPN="nano git build-essential clang libbsd-dev"
+L_PKG_DEBG="lldb valgrind"
+L_PKG_VIM="vim"
+#L_PKG_EMACS="emacs"
+
+# add yours packages to install here
+L_PKG_OTHERS=""
 
 # ---------------------------------------------------------- #
 # don't change this part
+
 # install packages
 apt-get install -y --no-install-recommends apt-utils=1.8.2 2> /dev/null
-apt-get install -y --no-install-recommends $LOCAL_MAN $LOCAL_DEPN $LOCAL_DEBG $LOCAL_VIM $LOCAL_EMACS
-#apt-get install -y --no-install-recommends man manpages-dev glibc-doc
-#apt-get install -y --no-install-recommends nano git build-essential clang libbsd-dev
-
-#install debbugers
-#apt-get install -y --no-install-recommends lldb valgrind
-
-# install text editors
-#apt-get install -y --no-install-recommends vim
-#apt-get install -y --no-install-recommends emacs
+apt-get install -y --no-install-recommends $L_PKG_MAN $L_PKG_DEPN $L_PKG_DEBG \
+	$L_PKG_VIM $L_PKG_EMACS $L_PKG_OTHERS
 
 # vim configuration
 if $(hash vim 2> /dev/null); then
