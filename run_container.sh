@@ -17,4 +17,4 @@ docker run -it --rm \
 	-e INTRA_ID="$(echo $LOCAL_INTRA_ID)" \
 	-e GIT_USER_NAME="$(echo $LOCAL_GIT_NAME)" \
 	-e GIT_USER_EMAIL="$(echo $LOCAL_GIT_EMAIL)" \
-    remote_42_img bash
+    remote_42_img
