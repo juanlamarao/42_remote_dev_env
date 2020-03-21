@@ -8,13 +8,13 @@ A docker image with an environment ready to code in C :D
 This project aims to support people programming in C with an environment containing:
 * Text editors: vim, \*emacs and nano; 
 
-* Compilers: gcc, clang and _make; 
+* Compilers: gcc, clang and _make\;
 
-* Debugger: lldb and valgrind; 
+* Debugger: lldb and valgrind ;
 
-* Version control: git; 
+ * Version control: git;
 
-* There is a folder called docker_files located at `/docker_files` which is mounted at the host machine. 
+*  There is a folder called docker_files located at `/docker_files` which is mounted at the host machine.
 
  _\*if you use emacs (don't know why :D) change the `srcs/deploy.sh` and uncomment the `L_PKG_EMACS="emacs"` line (line 25)_
 
@@ -46,7 +46,7 @@ First change the `run_container.sh` file with your informations
 ## Removing images
 `docker rmi remote_42_img debian:buster`
 
-## It time to help!
+## It time to help :D
 Fell free to help improve this environment to help others.  
 You can fork to make your own, but would be better if you fork it and
 submmit your changes as pull requests, and help it grow :D
