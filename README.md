@@ -1,5 +1,6 @@
 # 42_remote_dev_env
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6299392e511f431e881286679980aaa5)](https://app.codacy.com/manual/juanlamarao/42_remote_dev_env?utm_source=github.com&utm_medium=referral&utm_content=juanlamarao/42_remote_dev_env&utm_campaign=Badge_Grade_Dashboard)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 A docker image with an environment ready to code in C :D
