@@ -6,15 +6,15 @@ A docker image with an environment ready to code in C :D
 
 ## How it works
 This project aims to support people programming in C with an environment containing:
-* Text editors: vim, emacs and nano;
+* Text editors: vim, \*emacs and nano;
 * Compilers: gcc, clang and _make;
 * Debugger: lldb and valgrind;
 * Version control: git;  
-* There is a folder called docker_files located at `/docker_files` which is mounted at the host machine.
->  Change the docker run command to suit your configuration.
+* There is a folder called docker_files located at `/docker_files` which is mounted at the host machine.  
+\* if you use emacs (don't know why :D) change the `srcs/deploy.sh` and uncomment the `apt install emacs` line
 
-> TO DO add an image showing a circle of how it works  
-> build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
+> `comment` TO DO add an image showing a circle of how it works  
+> `comment` build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
 
 ## How to build the image
 1. `git clone https://github.com/juanlamarao/42_remote_dev_env`
@@ -50,7 +50,7 @@ submmit your changes as pull requests, and help it grow :D
 
 ### Check this _To do_
 * check permision of the docker volume at the host (Linux OK, Mac OK, Windows FAIL);
-* improve terminal bash;
+* improve terminal bash (more collors and cool funcs :D)
 * add pt-br language;
 * add support for graphical projects;
 * add norminette support;
