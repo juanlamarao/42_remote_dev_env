@@ -17,25 +17,39 @@ cd $HOME
 mv ~/sources.list /etc/apt/sources.list
 apt-get update
 
-# install dependency
+# packages to install
+LOCAL_MAN="man manpages-dev glibc-doc"
+LOCAL_DEPN="nano git build-essential clang libbsd-dev"
+LOCAL_DEBG="lldb valgrind"
+LOCAL_VIM="vim"
+#LOCAL_EMACS="emacs"
+
+# ---------------------------------------------------------- #
+# don't change this part
+# install packages
 apt-get install -y --no-install-recommends apt-utils=1.8.2 2> /dev/null
-apt-get install -y --no-install-recommends man manpages-dev glibc-doc
-apt-get install -y --no-install-recommends nano git build-essential clang libbsd-dev
+apt-get install -y --no-install-recommends $LOCAL_MAN $LOCAL_DEPN $LOCAL_DEBG $LOCAL_VIM $LOCAL_EMACS
+#apt-get install -y --no-install-recommends man manpages-dev glibc-doc
+#apt-get install -y --no-install-recommends nano git build-essential clang libbsd-dev
 
 #install debbugers
-apt-get install -y --no-install-recommends lldb valgrind
+#apt-get install -y --no-install-recommends lldb valgrind
 
 # install text editors
-apt-get install -y --no-install-recommends vim
+#apt-get install -y --no-install-recommends vim
 #apt-get install -y --no-install-recommends emacs
 
 # vim configuration
-cp vimrc /etc/vim/
-mkdir -p ~/.vim/after/plugin/
-cp ~/42header.vim ~/.vim/after/plugin/
+if [ $(hash vim) ]; then
+  cp vimrc /etc/vim/
+  mkdir -p ~/.vim/after/plugin/
+  cp ~/42header.vim ~/.vim/after/plugin/
+fi
 
 # emacs configuration
-cp -rf 42header_emacs ~/.emacs.d
+if [ $(hash emacs) ]; then
+  cp -rf 42header_emacs ~/.emacs.d
+fi
 
 # copy scripts and turn them executable
 cp su-exec /sbin/su-exec
