@@ -17,7 +17,7 @@ git config --global user.email "$GIT_USER_EMAIL"
 git config --global user.name "$GIT_USER_NAME"
 
 # changind ownership
-chown -R me: /workdir
+chown -R me: /docker_files
 
 # change 
 exec /sbin/su-exec me bash
