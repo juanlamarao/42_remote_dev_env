@@ -39,14 +39,12 @@ First change the `run_container.sh` file with your informations
 ## How to stop a running container
 * Option 1: from the host's terminal
 `docker stop remote_42_ctn`
+
 * Option 2: from the container's terminal
 `exit`
 
 ## Removing images
-### Linux || MacOS
 `docker rmi remote_42_img debian:buster`
-### Windows
-`on progress..`
 
 ## It time to help!
 Fell free to help improve this environment to help others.  
