@@ -8,8 +8,7 @@ L_INTRA_ID="42_intra_id"
 L_GIT_NAME="My Name"
 L_GIT_EMAIL="me@mail.com"
 
-# ------------------------------------------------------------------- #
-# don't change this part
+# ----------------- don't change this part ------------------ #
 L_USER=$(whoami)
 
 docker run -it --rm \
