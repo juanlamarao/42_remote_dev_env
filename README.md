@@ -62,8 +62,8 @@ submmit your changes as pull requests, and help it grow :D
 ### Check this _To do_
 
 -   check permision of the docker volume at the host; (Linux OK, Mac OK, Windows FAIL)
--   improve terminal bash; (more collors and cool funcs :D) OK
--   add pt-br language (acentos);
+-   improve terminal bash; (more collors and cool funcs :D) DONE
+-   add pt-br language (acentos); DONE
 -   add support for graphical projects;
 -   add norminette support;
 -   test libft-unit\_test (not working yet, something is missing?);
