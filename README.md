@@ -50,10 +50,10 @@ You can fork to make your own, but would be better if you fork it and
 submmit your changes as pull requests, and help it grow :D
 
 ### Check this _To do_
-* check permision of the docker volume at the host (Linux OK, Mac OK, Windows FAIL);
-* improve terminal bash (more collors and cool funcs :D)
-* add pt-br language;
+* check permision of the docker volume at the host; (Linux OK, Mac OK, Windows FAIL)
+* improve terminal bash; (more collors and cool funcs :D) OK
+* add pt-br language (acentos);
 * add support for graphical projects;
 * add norminette support;
-* test libft-unit_test (not working yet, something is missing);
-* check 42 header for emacs;
+* test libft-unit_test (not working yet, something is missing?);
+* test 42 header for emacs;
