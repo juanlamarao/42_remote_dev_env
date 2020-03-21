@@ -24,9 +24,9 @@ This project aims to support people programming in C with an environment contain
 
 ## How to build the image
 
-1. `git clone https://github.com/juanlamarao/42_remote_dev_env`
-2. Enter the `42_remote_dev_env` folder
-3. `docker build . -t remote_42_img`
+1.	`git clone https://github.com/juanlamarao/42_remote_dev_env`
+2.	Enter the `42_remote_dev_env` folder
+3.	`docker build . -t remote_42_img`
 
 ## How to run the container
 
@@ -46,10 +46,10 @@ First change the `run_container.sh` file with your informations
 
 ## How to stop a running container
 
-* Option 1: from the host's terminal  
+*	Option 1: from the host's terminal  
 `docker stop remote_42_ctn`
 
-* Option 2: from the container's terminal  
+*	Option 2: from the container's terminal  
 `exit`
 
 ## Removing images
@@ -64,13 +64,13 @@ submmit your changes as pull requests, and help it grow :D
 
 ### Check this _To do_
 
-* check permision of the docker volume at the host; (Linux OK, Mac OK, Windows FAIL)
-* improve terminal bash; (more collors and cool funcs :D) OK
-* add pt-br language (acentos);
-* add support for graphical projects;
-* add norminette support;
-* test libft-unit_test (not working yet, something is missing?);
-* test 42 header for emacs;
+*	check permision of the docker volume at the host; (Linux OK, Mac OK, Windows FAIL)
+*	improve terminal bash; (more collors and cool funcs :D) OK
+*	add pt-br language (acentos);
+*	add support for graphical projects;
+*	add norminette support;
+*	test libft-unit_test (not working yet, something is missing?);
+*	test 42 header for emacs;
 
 ## License
 
