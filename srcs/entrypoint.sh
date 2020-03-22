@@ -19,5 +19,8 @@ git config --global user.name "$GIT_USER_NAME"
 # changind ownership
 chown -R me: /docker_files
 
+# update CA certificates
+update-ca-certificates > /dev/null
+
 # change 
 exec /sbin/su-exec me bash
