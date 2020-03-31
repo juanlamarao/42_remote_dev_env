@@ -22,5 +22,13 @@ chown -R me: /docker_files
 # update CA certificates
 update-ca-certificates > /dev/null
 
+# change root password
+if [ -z $ROOT_PASSWORD ]; then
+	echo "L_ROOT_PASSWD wasn't set in ./run_container.sh and will be set now!"
+	ROOT_PASSWD="toor"
+fi
+echo "root:$ROOT_PASSWD" | chpasswd
+echo -e "root password is $ROOT_PASSWD\n"
+
 # change 
 exec /sbin/su-exec me bash
