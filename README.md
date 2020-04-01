@@ -14,9 +14,9 @@ This project aims to support people programming in C with an environment contain
 -   Version control: git;
 -   There is a folder called docker\_files located at `/docker_files` which is mounted at the host machine.
 
-\* if you use emacs (don't know why :D) change the `srcs/deploy.sh` and uncomment the `L_PKG_EMACS="emacs"` line (line 19)  
+\* if you use emacs (don't know why :D) change the `srcs/deploy.sh` and uncomment the `L_PKG_EMACS="emacs"` line (line 19)
 
->	`comment` TO DO add an image showing a circle of how it works  
+>	`comment` TO DO add an image showing a circle of how it works
 >	`comment` build image -> run a container from the image -> use docker_files folder as a bridge beteewn the container and your host machine
 
 ## How to build the image
@@ -43,10 +43,10 @@ First change the `run_container.sh` file with your informations
 
 ## How to stop a running container
 
--   Option 1: from the host's terminal  
+-   Option 1: from the host's terminal
 `docker stop remote_42_ctn`
 
--   Option 2: from the container's terminal  
+-   Option 2: from the container's terminal
 `exit`
 
 ## Removing images
@@ -55,7 +55,7 @@ First change the `run_container.sh` file with your informations
 
 ## It time to help :D
 
-Fell free to help improve this environment to help others.  
+Fell free to help improve this environment to help others.
 You can fork to make your own, but would be better if you fork it and
 submmit your changes as pull requests, and help it grow :D
 
@@ -65,6 +65,6 @@ submmit your changes as pull requests, and help it grow :D
 -   improve terminal bash; (more collors and cool funcs :D) DONE
 -   add pt-br language (acentos);
 -   add support for graphical projects;
--   add norminette support;
+-   add norminette support; DONE
 -   test libft-unit\_test (not working yet, something is missing?);
 -   test 42 header for emacs and vim;
