@@ -67,4 +67,4 @@ submmit your changes as pull requests, and help it grow :D
 -   add support for graphical projects;
 -   add norminette support;
 -   test libft-unit\_test (not working yet, something is missing?);
--   test 42 header for emacs;
+-   test 42 header for emacs and vim;
