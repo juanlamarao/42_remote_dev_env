@@ -32,8 +32,11 @@ apt-get update
 # install packages
 apt-get install -y --no-install-recommends apt-utils=1.8.2 2> /dev/null
 echo "$L_PKG_MAN" | xargs apt-get install -y --no-install-recommends
-echo "$L_PKG_DEPN" "$L_PKG_DEBG" "$L_PKG_VIM" "$L_PKG_EMACS" "$L_PKG_OTHERS" | \
+echo "$L_PKG_DEPN" "$L_PKG_DEBG" "$L_PKG_VIM" "$L_PKG_EMACS" "$L_PKG_OTHERS" sudo | \
 	xargs apt-get install -y --no-install-recommends
+
+# config sudores
+echo "me ALL=(ALL) ALL" >> /etc/sudoers
 
 # vim configuration
 if $(hash vim 2> /dev/null); then
