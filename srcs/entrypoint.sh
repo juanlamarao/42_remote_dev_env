@@ -30,5 +30,13 @@ fi
 echo "root:$ROOT_PASSWD" | chpasswd
 echo "\nroot password is $ROOT_PASSWD\n\n"
 
-# change 
+# change root password
+if [ -z $SUDO_PASSWD ]; then
+	echo "L_SUDO_PASSWD wasn't set in ./run_container.sh and will be set now!"
+	SUDO_PASSWD="odus"
+fi
+echo "me:$SUDO_PASSWD" | chpasswd
+echo "\nsudo password is $SUDO_PASSWD\n\n"
+
+# change
 exec /sbin/su-exec me bash
